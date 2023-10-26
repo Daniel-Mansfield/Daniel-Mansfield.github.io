@@ -85,7 +85,6 @@ a {
   padding: 5px 40px;
   border: 2px solid white;
   transition: all 0.3s ease-in-out;
-  animation: Anim 1s ease-in-out infinite;
 }
 
 .btn-hire-me:hover {
@@ -227,10 +226,10 @@ a {
 
 .resume-outer-section {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   background-color: var(--primary-app-color);
   color: #fff;
-  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 89%);
 }
 
 .resume-new-section {

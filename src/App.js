@@ -3,7 +3,6 @@ import "./styles.css";
 import Education from "./Education";
 import Work from "./Work";
 import Programming from "./Programming";
-import Projects from "./Projects";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Typed from "typed.js";
@@ -12,7 +11,6 @@ export default function App() {
   const [education, setEducation] = useState(true);
   const [workHistory, setWorkHistory] = useState(false);
   const [programming, setProgramming] = useState(false);
-  const [projects, setProjects] = useState(false);
   const [opennav, setOpennav] = useState(false);
 
   const el = useRef(null);
@@ -27,7 +25,8 @@ export default function App() {
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
-      autoInsertCss: true
+      autoInsertCss: true,
+      showCursor: false
     });
 
     return () => {
@@ -39,7 +38,6 @@ export default function App() {
     setEducation(false);
     setWorkHistory(false);
     setProgramming(false);
-    setProjects(false);
   }
 
   function ChangeState(function1, state1) {
@@ -203,9 +201,6 @@ export default function App() {
               <span className="icons-span">
                 <i className="fa-regular fa-file-code"></i>
               </span>
-              <span className="icons-span">
-                <i className="fa-solid fa-list-check"></i>
-              </span>
             </div>
             <div className="d-flex flex-column">
               <span
@@ -244,35 +239,13 @@ export default function App() {
               >
                 Programming
               </span>
-              <span
-                className={
-                  projects === false
-                    ? "resume-options-items"
-                    : "selected resume-options-items"
-                }
-                onClick={() => {
-                  ChangeState(setProjects, true);
-                }}
-              >
-                Projects
-              </span>
             </div>
           </div>
           <div className="col-lg-8 col-md-8 resume-right-section">
             {education === true && <Education />}
             {workHistory === true && <Work />}
             {programming === true && <Programming />}
-            {projects === true && <Projects />}
           </div>
-        </div>
-      </div>
-      <div className="testimonials-part my-5" id="testimonials">
-        <div className="testimonials-inner-part d-flex flex-column">
-          <span className="about-me-text">Testimonials</span>
-          <span className="why-text-sub mb-5">
-            What my clients say about me
-          </span>
-          <Testimonials />
         </div>
       </div>
       <div className="contact-me-part py-4" id="contactme">
