@@ -4,24 +4,36 @@ import "./programming.css";
 export default function Programming() {
   const value = [
     {
-      text: "Javascript/Typescript",
-      percentage: 80
+      text: "Java (Type) script",
+      percentage: 90
     },
     {
-      text: "ReactJS",
-      percentage: 80
+      text: "Git, Unix",
+      percentage: 90
+    },
+    {
+      text: "React",
+      percentage: 85
     },
     {
       text: "Java",
       percentage: 80
     },
     {
-      text: "Python",
-      percentage: 80
+      text: "C#",
+      percentage: 75
     },
     {
-      text: "C#",
-      percentage: 80
+      text: "Node.js",
+      percentage: 75
+    },
+    {
+      text: "Python",
+      percentage: 70
+    },
+    {
+      text: "Swift",
+      percentage: 70
     }
   ];
   return (

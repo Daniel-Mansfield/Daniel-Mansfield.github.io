@@ -86,13 +86,6 @@ export default function App() {
             Resume
           </a>
           <a
-            href="#testimonials"
-            className="mx-4 nav-items"
-            onClick={() => setOpennav(false)}
-          >
-            Testimonials
-          </a>
-          <a
             href="#contactme"
             className="mx-4 nav-items"
             onClick={() => setOpennav(false)}
