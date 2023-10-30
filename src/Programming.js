@@ -8,7 +8,7 @@ export default function Programming() {
       percentage: 90
     },
     {
-      text: "Git, Unix",
+      text: "Git",
       percentage: 90
     },
     {

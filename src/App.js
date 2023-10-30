@@ -3,7 +3,6 @@ import "./styles.css";
 import Education from "./Education";
 import Work from "./Work";
 import Programming from "./Programming";
-import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Typed from "typed.js";
 
@@ -159,14 +158,16 @@ export default function App() {
                 Full Stack Web and Mobile Developer
               </span>
               <span className="few-highlights">
-                <span className="few-text">Here are a few highlights</span>
+                <span className="few-text">Here are a Few Highlights</span>
                 <span className="few-list">
                   <ul>
-                    <li>Full Stack Web and Mobile Development</li>
-                    <li>Interactive Front End as per Design</li>
-                    <li>Experience with Unity and C#</li>
-                    <li>Proficient in Java and Python</li>
-                    <li>Experience with Node.js, Docker</li>
+                    <li>Team-Oriented, Agile Developer</li>
+                    <li>Creative & Interactive Front End Design</li>
+                    <li>React and Typescript</li>
+                    <li>Java and C#</li>
+                    <li>MongoDB, PostgreSQL, MSSQL</li>
+                    <li>Proficient in Python and C</li>
+                    <li>Experience with Node, Docker, Flask, and Swift</li>
                   </ul>
                 </span>
               </span>
